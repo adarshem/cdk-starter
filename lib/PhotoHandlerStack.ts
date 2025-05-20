@@ -17,7 +17,7 @@ export class PhotoHandlerStack extends cdk.Stack {
     // This is the bucket name that was exported from the PhotosStack
     // and can be used in this stack
     // The bucket name is passed as an environment variable to the Lambda function
-    const targetBucket = cdk.Fn.importValue('photos-bucket');
+    //  const targetBucket = cdk.Fn.importValue('photos-bucket');
 
     new LambdaFunction(this, 'PhotoHandler', {
       functionName: 'PhotoHandler',
